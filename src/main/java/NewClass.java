@@ -1,4 +1,4 @@
-public class NewClass {
+public class NewClass extends ParrentClass{
 
     public String somevalue;
 

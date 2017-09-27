@@ -82,7 +82,8 @@ public class Main {
                             refl(aClass1);
                         }
                     }
-                } else if (field.getType().getName().equals("NewClass") || field.getType().getName().equals("SomeClass")) {
+//                } else if (field.getType().getName().equals("NewClass") || field.getType().getName().equals("SomeClass")) {
+                } else if (field.get(o).getClass().getSuperclass().getName().equals("ParrentClass")) {
                     Object oClass = field.get(o);
                     refl(oClass);
                 }

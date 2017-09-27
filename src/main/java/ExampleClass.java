@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ExampleClass {
+public class ExampleClass extends ParrentClass{
     public NewClass newClass;
 
     public String field1 = "value1";

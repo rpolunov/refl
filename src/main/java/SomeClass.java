@@ -1,4 +1,4 @@
-public class SomeClass {
+public class SomeClass extends ParrentClass{
 
     public String name;
     public String age;
