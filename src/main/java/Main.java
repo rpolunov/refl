@@ -41,6 +41,14 @@ public class Main {
 
 //        System.out.println(exampleClass);
 
+        NewClass newClass = new NewClass();
+
+        newClass.somevalue = "someValueFromNewClas";
+
+        newClass.someClassinear = someClass1;
+
+        exampleClass.newClass = newClass;
+
         return exampleClass;
     }
 
@@ -74,6 +82,9 @@ public class Main {
                             refl(aClass1);
                         }
                     }
+                } else if (field.getType().getName().equals("NewClass") || field.getType().getName().equals("SomeClass")) {
+                    Object oClass = field.get(o);
+                    refl(oClass);
                 }
             }
         } catch (NoSuchFieldException e) {
